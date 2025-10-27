@@ -1,0 +1,57 @@
+---
+title: "Dashboard"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(tidyverse)
+library(p8105.datasets)
+library(plotly)
+```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+The total cumulative number of orders for products across different departments
+```{r}
+data("instacart")
+instacart|>
+  filter(department !="missing")|>
+  mutate(department=str_to_title(department))|>
+  group_by(department)|>
+  summarise(count=n())|>
+  mutate(department=fct_reorder(department,count))|>
+  plot_ly(x=~department,y=~count,color = ~department, type = "bar", colors = "viridis")
+  
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+The distribution of days since the last order across different departments.
+```{r}
+instacart|>
+  filter(department !="missing")|>
+  filter(order_number!=1)|>
+  drop_na(days_since_prior_order)|>
+  plot_ly(x=~department, y=~days_since_prior_order, color = ~department, type = "box",colors = "viridis")
+```
+
+
+### Chart C
+The distribution of the hour of day when orders were placed, by aisle within each department.
+```{r}
+instacart|>
+  filter(department !="missing")|>
+  drop_na(order_hour_of_day)|>
+  group_by(department,aisle)|>
+  summarise(mean_order_hour=mean(order_hour_of_day))|>
+  mutate(text_label=str_c("Aisle Name:",aisle))|>
+  plot_ly(x=~department,y=~mean_order_hour,type = "scatter", mode = "markers",
+    color = ~department, text = ~text_label, alpha = 0.5)
