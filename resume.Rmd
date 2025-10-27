@@ -1,0 +1,62 @@
+---
+title: "Resume"
+output: 
+  html_document:
+    toc: true
+    toc_float: true
+
+---
+
+#### Muxin Li
+📍 Long Island City, NY 11101  
+📧 [ml5363@cumc.columbia.edu](mailto:ml5363@cumc.columbia.edu)  
+📞 +1 (530) 231-0021  
+
+---
+
+#### Education
+**University of California, Davis** — Davis, CA, U.S.  
+**Bachelor of Arts in Economics** & **Bachelor of Science in Mathematics**  
+*September 2021 – March 2025*  
+- **GPA:** 3.70 / 4.00  
+- **Honors:** Dean's List — Fall 2022, Winter 2023, Winter 2024 (Top 1%)  
+- **Relevant Coursework:** Calculus, Linear Algebra, Differential Equations, Probability, Real Analysis, Stochastic Processes, Financial Economics, Intermediate Micro & Macro Theory, Public Finance, Statistical Methods, Programming
+
+---
+
+#### Professional Experience
+**China Galaxy Securities** — Shanghai, China  
+*Research Department Research Assistant Intern* | Aug 2023 – Sep 2023  
+- Explored reinforcement learning-based alpha generation and replication of factor combination mining models  
+- Analyzed and summarized code from DFQ Reinforcement Learning Factor Combination Mining System  
+
+**Illuminera (IQVIA business)** — Shanghai, China  
+*Marketing Data Analysis Intern — Consumer & Big Health* | May 2025 – Jul 2025  
+- Processed and structured **3,000+** consumer keyword data records across multiple categories  
+- Categorized keywords by efficacy, ingredient, target group, brand, etc., enabling consumer insight analytics  
+- Automated workflows using **advanced Excel & pivot tables**, reducing dataset from 3,000 → less than 300  
+- Provided datasets & insights informing brand strategies for **Colgate, Zespri, and Pfizer**
+
+---
+
+#### Academic Experience
+**Simulation and CDF Analysis of Cycle Lengths in Random Permutations** — Davis, CA  
+*Research Assistant | Advisor: Prof. Ben Morris* | Aug 2024 – Dec 2024  
+- Built random permutation generation and cycle-detection functions in symmetric matrices  
+- Analyzed largest connected component structures and cycle distributions  
+- Conducted simulation-theory comparisons using empirical CDF plots  
+
+---
+
+#### Projects & Achievements
+**WorldQuant Challenge — Gold Level** | Online | Mar 2023 – Apr 2023  
+- Constructed **20+ alpha factors** with Sharpe ratio > 2  
+- Modeled trading signals via **LightGBM & Transformer**, tested using 2020-2022 data  
+- Achieved **49.0% annual return**, Sharpe **2.29**, max drawdown **18.6%**  
+- Global ranking: **1443 / 37,914**
+
+---
+
+#### Skills
+- **Programming:** Python (NumPy), MATLAB, R, STATA  
+- **Data:** Excel Pivot Table 
