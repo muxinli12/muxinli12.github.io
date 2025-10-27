@@ -16,8 +16,7 @@ library(plotly)
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
-The total cumulative number of orders for products across different departments
+### The total cumulative number of orders for products across different departments
 ```{r}
 data("instacart")
 instacart|>
@@ -26,26 +25,26 @@ instacart|>
   group_by(department)|>
   summarise(count=n())|>
   mutate(department=fct_reorder(department,count))|>
-  plot_ly(x=~department,y=~count,color = ~department, type = "bar", colors = "viridis")
+  plot_ly(x=~department,y=~count,color = ~department, type = "bar", colors = "viridis")|>
+  layout(xaxis=list(tickangle=-45, automargin=TRUE), margin=list(b=90))
   
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
-The distribution of days since the last order across different departments.
+### The distribution of days since the last order across different departments
 ```{r}
 instacart|>
   filter(department !="missing")|>
   filter(order_number!=1)|>
   drop_na(days_since_prior_order)|>
-  plot_ly(x=~department, y=~days_since_prior_order, color = ~department, type = "box",colors = "viridis")
+  plot_ly(x=~department, y=~days_since_prior_order, color = ~department, type = "box",colors = "viridis")|>
+  layout(xaxis=list(tickangle=-45, automargin=TRUE), margin=list(b=90))
 ```
 
 
-### Chart C
-The distribution of the hour of day when orders were placed, by aisle within each department.
+### The distribution of the hour of day when orders were placed, by aisle within each department
 ```{r}
 instacart|>
   filter(department !="missing")|>
@@ -54,4 +53,5 @@ instacart|>
   summarise(mean_order_hour=mean(order_hour_of_day))|>
   mutate(text_label=str_c("Aisle Name:",aisle))|>
   plot_ly(x=~department,y=~mean_order_hour,type = "scatter", mode = "markers",
-    color = ~department, text = ~text_label, alpha = 0.5)
+    color = ~department, text = ~text_label, alpha = 0.5)|>
+  layout(xaxis=list(tickangle=-45, automargin=TRUE), margin=list(b=90))
