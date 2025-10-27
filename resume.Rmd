@@ -6,15 +6,14 @@ output:
     toc_float: true
 
 ---
-
-#### Muxin Li
+### Muxin Li
 📍 Long Island City, NY 11101  
 📧 [ml5363@cumc.columbia.edu](mailto:ml5363@cumc.columbia.edu)  
 📞 +1 (530) 231-0021  
 
 ---
 
-#### Education
+### Education
 **University of California, Davis** — Davis, CA, U.S.  
 **Bachelor of Arts in Economics** & **Bachelor of Science in Mathematics**  
 *September 2021 – March 2025*  
@@ -24,7 +23,7 @@ output:
 
 ---
 
-#### Professional Experience
+### Professional Experience
 **China Galaxy Securities** — Shanghai, China  
 *Research Department Research Assistant Intern* | Aug 2023 – Sep 2023  
 - Explored reinforcement learning-based alpha generation and replication of factor combination mining models  
@@ -39,7 +38,7 @@ output:
 
 ---
 
-#### Academic Experience
+### Academic Experience
 **Simulation and CDF Analysis of Cycle Lengths in Random Permutations** — Davis, CA  
 *Research Assistant | Advisor: Prof. Ben Morris* | Aug 2024 – Dec 2024  
 - Built random permutation generation and cycle-detection functions in symmetric matrices  
@@ -48,7 +47,7 @@ output:
 
 ---
 
-#### Projects & Achievements
+### Projects & Achievements
 **WorldQuant Challenge — Gold Level** | Online | Mar 2023 – Apr 2023  
 - Constructed **20+ alpha factors** with Sharpe ratio > 2  
 - Modeled trading signals via **LightGBM & Transformer**, tested using 2020-2022 data  
@@ -57,6 +56,6 @@ output:
 
 ---
 
-#### Skills
+### Skills
 - **Programming:** Python (NumPy), MATLAB, R, STATA  
 - **Data:** Excel Pivot Table 

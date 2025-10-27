@@ -7,7 +7,7 @@ output:
 
 ---
 
-#### 👋 Introduction
+### 👋 Introduction
 Hi! I’m **Muxin Li**, a graduate student in **Biostatistics — Public Health Data Science** at Columbia University’s Mailman School of Public Health. I recently completed my Bachelor’s degree in **Economics** and **Mathematics** at the University of California, Davis.
 
 I’m passionate about applying **statistics and data visualization** to answer complex questions in **public health, healthcare analytics, and quantitative finance**. 
@@ -16,7 +16,7 @@ This website serves as a growing portfolio of my academic projects, analytical w
 
 Please feel free to explore my **resume** from the navigation bar above. I’m always open to collaboration and new opportunities!
 
-#### 📬 Contact
+### 📬 Contact
 📧 Email: [ml5363@cumc.columbia.edu](mailto:ml5363@cumc.columbia.edu)  
 💻 GitHub: [github.com/muxinli12](https://github.com/muxinli12)  
 📍 Location: New York, NY  
